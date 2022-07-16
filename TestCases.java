@@ -80,20 +80,30 @@ public class TestCases {
 				@Test
 				public void stringAtFirstPosition() {
 					Logic log = new Logic();
-					String actualResult = log.findMax("banana", "peach", "apple");
+					String actualResult = log.findMax("peach", "banana", "apple");
 					System.out.println("Maximum at first Position: " + actualResult);
 					System.out.println("-----------------------------");
-					String expectedResult = "banana";
+					String expectedResult = "peach";
 					Assert.assertEquals(expectedResult, actualResult);
 				}
-				// Test Case for the String where max_Value at First Position
+				// Test Case for the String where max_Value at Second Position
 				@Test
 				public void stringAtSecondPosition() {
 					Logic log = new Logic();
-					String actualResult = log.findMax("peach", "banana", "apple");
+					String actualResult = log.findMax("banana", "peach", "apple");
 					System.out.println("Maximum at second Position: " + actualResult);
 					System.out.println("-----------------------------");
-					String expectedResult = "banana";
+					String expectedResult = "peach";
+					Assert.assertEquals(expectedResult, actualResult);
+				}
+				// Test Case for the String where max_Value at third Position
+				@Test
+				public void stringAtThirdPosition() {
+					Logic log = new Logic();
+					String actualResult = log.findMax("banana", "apple", "peach");
+					System.out.println("Maximum at third Position: " + actualResult);
+					System.out.println("-----------------------------");
+					String expectedResult = "peach";
 					Assert.assertEquals(expectedResult, actualResult);
 				}
 }
