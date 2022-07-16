@@ -32,7 +32,11 @@ class MaximumTest {
 		
 		float x = 1.1f, y = 2.1f, z = 3.1f;
 		System.out.println("Maximum Float value is: "+ findMax(x, y, z));
-		System.out.println("-----------------------------");		
+		System.out.println("-----------------------------");
+		
+		String s1 = "Hi!!..", s2 = "How", s3 = "are you?";
+		System.out.println("Maximum String value is: "+ findMax(s1, s2, s3));
+		System.out.println("-----------------------------");
 		}
 	}
 
