@@ -3,7 +3,6 @@
  */
 package com.bridgelabz;
 
-import java.util.Scanner;
 
 /**
  * @author MD_AFROZ
@@ -12,8 +11,8 @@ import java.util.Scanner;
 class MaximumTest {
 
 	public static <T extends Comparable<T>> T findMax(T a, T b, T c) {
-		System.out.println("The numbers are : " + a + ","
-				+ b + "," + c);
+		System.out.println("The numbers are : " + a + ", "
+				+ b + ", " + c);
 		T max = a;
 		if (max.compareTo(b) < 0) {
 			max = b;
@@ -28,8 +27,12 @@ class MaximumTest {
 		
 		int a = 10;
 		Integer b = 20, c = 30;
-		System.out.println("Maximum number is: "+ findMax(a, b, c));
-				
+		System.out.println("Maximum Integer value is: "+ findMax(a, b, c));
+		System.out.println("-----------------------------");
+		
+		float x = 1.1f, y = 2.1f, z = 3.1f;
+		System.out.println("Maximum Float value is: "+ findMax(x, y, z));
+		System.out.println("-----------------------------");		
 		}
 	}
 
