@@ -86,4 +86,14 @@ public class TestCases {
 					String expectedResult = "banana";
 					Assert.assertEquals(expectedResult, actualResult);
 				}
+				// Test Case for the String where max_Value at First Position
+				@Test
+				public void stringAtSecondPosition() {
+					Logic log = new Logic();
+					String actualResult = log.findMax("peach", "banana", "apple");
+					System.out.println("Maximum at second Position: " + actualResult);
+					System.out.println("-----------------------------");
+					String expectedResult = "banana";
+					Assert.assertEquals(expectedResult, actualResult);
+				}
 }
