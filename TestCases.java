@@ -42,7 +42,16 @@ public class TestCases {
 			System.out.println("Maximum at third Position: " + actualResult);
 			System.out.println("-----------------------------");
 			int expectedResult = 12;
-			Assert.assertEquals(expectedResult, actualResult);
-	
+			Assert.assertEquals(expectedResult, actualResult);	
 	}
+		// Test Case for the float where max_Value at First Position
+		@Test
+		public void floatAtFirstPosition() {
+			Logic log = new Logic();
+			float actualResult = log.findMax(11.2f, 10.3f, 9.4f);
+			System.out.println("Maximum at first Position: " + actualResult);
+			System.out.println("-----------------------------");
+			float expectedResult = 11.2f;
+			Assert.assertEquals(expectedResult, actualResult, expectedResult);
+		}
 }
